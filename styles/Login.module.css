@@ -1,0 +1,40 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1E1E1E; /* Fundo preto */
+    color: #fff; /* Texto branco */
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff; /* Cor branca para o título */
+  }
+  
+  .loginBox {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #333; /* Fundo da caixa de login */
+  }
+  
+  .inputContainer {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffeb3b;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
