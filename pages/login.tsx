@@ -42,8 +42,8 @@ export default function LoginPage() {
              style={{ width: '100%', padding: '2px', marginTop: '10px' }}
            />
          </div>
-         <button type="submit" style={{ padding: '10px 15px', backgroundColor: '#0070f3', color: 'white', border: 'none', borderRadius: '5px' }}>
-           Logar
+         <button type="submit" className={styles.loginButton}>
+           Login
          </button>
        </form>
      </div>
