@@ -1,0 +1,122 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .questionHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+  }
+  
+  .questionImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+  }
+  
+  .questionTitle {
+    font-size: 2rem;
+    color: #ffeb3b; /* Título amarelo */
+    margin: 0;
+  }
+  
+  .questionText {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .answerFormSection {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .answerFormSection h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffeb3b;
+  }
+  
+  .answerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .answerTitleInput,
+  .answerTextInput {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .answerTitleInput {
+    font-size: 1rem;
+  }
+  
+  .answerTextInput {
+    height: 100px;
+    font-size: 1rem;
+  }
+  
+  .submitButton {
+    align-self: flex-start;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffeb3b;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #ffe082;
+  }
+  
+  .answersSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .answerBox {
+    display: flex;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .answerImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .answerContent {
+    flex: 1;
+  }
+  
+  .answerTitle {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #ffeb3b;
+  }
+  
+  .answerText {
+    font-size: 1rem;
+  }

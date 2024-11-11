@@ -1,0 +1,58 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .questionTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffeb3b; /* Título amarelo */
+  }
+  
+  .questionText {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .answersSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .answerBox {
+    display: flex;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .answerImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .answerContent {
+    flex: 1;
+  }
+  
+  .answerTitle {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #ffeb3b; /* Título amarelo */
+  }
+  
+  .answerText {
+    font-size: 1rem;
+  }
