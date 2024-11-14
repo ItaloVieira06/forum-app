@@ -1,63 +1,54 @@
+/* styles/NavBar.module.css */
+
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  background-color: #1E1E1E; 
+  background-color: #1E1E1E;
+  color: #fff;
   border-bottom: 2px solid #fff;
 }
 
-.logo {
-  font-size: 20px;
-  color: #fff; 
-}
-
 .logo a {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-.navList {
+.navLinks {
   display: flex;
-  gap: 10px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 15px;
 }
 
-
-.navList li a {
-  color: inherit;
+/* Estilo padrão para links */
+.link {
   text-decoration: none;
-  padding: 8px 12px;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.navList li:hover a,
-.active a {
-  color: #ffeb3b; 
+/* Estilo para "Home" e "Login" com fundo preto e texto branco */
+.blackButton {
+  background-color: #333;
+  color: #fff;
 }
 
-.bordered a {
-  background-color: #fff; 
-  color: #111 !important; 
-  border: 2px solid #fff; 
-  border-radius: 5px; 
+.blackButton:hover {
+  background-color: #333;
+  color: #ffeb3b;
 }
 
-.bordered2 a {
-  background-color: #2C2C2C; 
-  color: #fff; 
-  border: 2px solid #2C2C2C; 
-  border-radius: 5px; 
+/* Estilo para "Registrar" com fundo branco e texto preto */
+.whiteButton {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
 }
 
-.bordered a:hover {
-  background-color: #ffeb3b; 
-  color: #000 !important; 
-}
-
-.bordered2 a:hover {
-  background-color: #ffeb3b; 
-  color: #000 !important; 
+.whiteButton:hover {
+  background-color: #f0f0f0;
+  color: #000;
 }

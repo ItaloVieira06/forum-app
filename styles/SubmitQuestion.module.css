@@ -6,13 +6,13 @@
     max-width: 600px;
     margin: 0 auto;
     color: #fff;
-    background-color: #000;
+    background-color: #1E1E1E;
   }
   
   .title {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ffeb3b; /* Cor amarela para o título */
+    color: #ffeb3b; 
   }
   
   .form {

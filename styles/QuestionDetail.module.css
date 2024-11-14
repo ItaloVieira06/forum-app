@@ -4,13 +4,13 @@
     align-items: center;
     padding: 20px;
     color: #fff;
-    background-color: #000;
+    background-color: #1E1E1E;
   }
   
   .questionTitle {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ffeb3b; /* Título amarelo */
+    color: #ffeb3b; 
   }
   
   .questionText {
@@ -50,7 +50,7 @@
   .answerTitle {
     font-size: 1.2rem;
     margin-bottom: 5px;
-    color: #ffeb3b; /* Título amarelo */
+    color: #ffeb3b; 
   }
   
   .answerText {
