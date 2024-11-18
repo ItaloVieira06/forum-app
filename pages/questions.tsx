@@ -49,11 +49,10 @@ export default function QuestionsPage({ questions, page, totalPages }: Questions
   );
 }
 
-// Função para buscar perguntas com paginação
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const page = Number(context.query.page) || 1;
   const questionsPerPage = 8;
-  const res = await fetch(`https://sua-api.com/perguntas?page=${page}&limit=${questionsPerPage}`);
+  const res = await fetch(`https://api.com/perguntas?page=${page}&limit=${questionsPerPage}`);
   const { questions, total } = await res.json();
 
   const totalPages = Math.ceil(total / questionsPerPage);

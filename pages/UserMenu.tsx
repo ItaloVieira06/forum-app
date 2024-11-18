@@ -10,16 +10,15 @@ export default function UserMenu() {
   };
 
   const handleLogout = () => {
-    // Exemplo de lógica de logout: remover o token ou limpar dados de sessão
-    localStorage.removeItem('authToken'); // Exemplo para remoção de token do localStorage
-    router.push('/login'); // Redireciona para a página de login
+    
+    localStorage.removeItem('authToken'); 
+    router.push('/login');
   };
 
   return (
     <div className={styles.menuContainer}>
       <h1 className={styles.title}>Menu do Usuário</h1>
 
-      {/* Botão para Enviar Pergunta */}
       <button 
         onClick={() => handleNavigation('/questions/submitQuestion')} 
         className={styles.menuButton}
@@ -27,7 +26,6 @@ export default function UserMenu() {
         Enviar Pergunta
       </button>
 
-      {/* Botão para Atualizar Dados */}
       <button 
         onClick={() => handleNavigation('/user/updateProfile')} 
         className={styles.menuButton}
@@ -35,7 +33,6 @@ export default function UserMenu() {
         Atualizar Dados
       </button>
 
-      {/* Botão para Logout */}
       <button 
         onClick={handleLogout} 
         className={styles.logoutButton}

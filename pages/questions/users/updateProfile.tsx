@@ -34,7 +34,6 @@ export default function UpdateProfile() {
     const isCurrentDataFilled = Object.values(currentData).some((val) => val !== '');
     const isNewDataFilled = Object.values(newData).some((val) => val !== '');
 
-    // Verifica se os campos correspondentes estão preenchidos corretamente
     if (
       (currentData.name && !newData.name) ||
       (!currentData.name && newData.name) ||
@@ -48,7 +47,6 @@ export default function UpdateProfile() {
     }
 
     if (isCurrentDataFilled && isNewDataFilled) {
-      // Lógica para atualizar os dados do usuário
       console.log('Dados atuais:', currentData);
       console.log('Novos dados:', newData);
     } else {
@@ -62,7 +60,6 @@ export default function UpdateProfile() {
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.columnsContainer}>
           
-          {/* Coluna de Dados Atuais */}
           <div className={styles.column}>
             <h2 className={styles.columnTitle}>Dados Atuais</h2>
             <input
@@ -88,7 +85,6 @@ export default function UpdateProfile() {
             />
           </div>
 
-          {/* Coluna de Novos Dados */}
           <div className={styles.column}>
             <h2 className={styles.columnTitle}>Novos Dados</h2>
             <input
@@ -115,7 +111,6 @@ export default function UpdateProfile() {
           </div>
         </div>
 
-        {/* Botão para Enviar Dados */}
         <button type="submit" className={styles.submitButton}>
           Atualizar Dados
         </button>

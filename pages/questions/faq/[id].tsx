@@ -7,7 +7,7 @@ export default function QuestionDetail() {
   const router = useRouter();
   const { id } = router.query;
 
-  // Dados simulados da pergunta (exemplo)
+  // Dados simulados (exemplo)
   const questionData = {
     title: `Título da Pergunta ${id}`,
     text: `Aqui está o texto detalhado da pergunta ${id}, descrevendo o contexto e as informações relacionadas.`,
@@ -27,13 +27,11 @@ export default function QuestionDetail() {
 
   return (
     <div className={styles.pageContainer}>
-      {/* Título da Pergunta */}
+
       <h1 className={styles.questionTitle}>{questionData.title}</h1>
 
-      {/* Texto da Pergunta */}
       <p className={styles.questionText}>{questionData.text}</p>
 
-      {/* Caixa de Respostas */}
       <div className={styles.answersSection}>
         {questionData.answers.map((answer, index) => (
           <div key={index} className={styles.answerBox}>

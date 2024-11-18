@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-//import { GetServerSideProps } from 'next';
+import { GetServerSideProps } from 'next';
 import Link from 'next/link';
 import styles from '../styles/FaqPage.module.css';
 
@@ -51,11 +51,11 @@ export default function FaqPage({ questions, page, totalPages }: FaqPageProps) {
   );
 }
 
-/*
+
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const page = Number(context.query.page) || 1;
   const questionsPerPage = 8;
-  const res = await fetch(`https://sua-api.com/faq?page=${page}&limit=${questionsPerPage}`);
+  const res = await fetch(`https://api.com/faq?page=${page}&limit=${questionsPerPage}`);
   const { questions, total } = await res.json();
 
   const totalPages = Math.ceil(total / questionsPerPage);
@@ -64,4 +64,3 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     props: { questions, page, totalPages },
   };
 };
-*/

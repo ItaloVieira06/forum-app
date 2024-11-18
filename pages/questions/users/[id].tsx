@@ -32,7 +32,7 @@ export default function QuestionWithResponse() {
 
   const handleAnswerSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    // Lógica para enviar a nova resposta (exemplo)
+    //nova resposta (exemplo)
     console.log("Nova Resposta:", newAnswerTitle, newAnswerText);
     setNewAnswerTitle("");
     setNewAnswerText("");
