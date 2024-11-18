@@ -16,9 +16,7 @@ export default function SubmitQuestion() {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    // Lógica para enviar a pergunta (exemplo)
     console.log("Pergunta Enviada:", { title, category, questionText, image });
-    // Resetar os campos após o envio
     setImage(null);
     setTitle("");
     setCategory("");
@@ -30,7 +28,6 @@ export default function SubmitQuestion() {
       <h1 className={styles.title}>Enviar uma Nova Pergunta</h1>
       <form onSubmit={handleSubmit} className={styles.form}>
         
-        {/* Upload de Imagem */}
         <label htmlFor="image" className={styles.label}>
           Anexar Imagem:
         </label>
@@ -42,7 +39,6 @@ export default function SubmitQuestion() {
           className={styles.fileInput} 
         />
 
-        {/* Título da Pergunta */}
         <label htmlFor="title" className={styles.label}>
           Título da Pergunta:
         </label>
@@ -55,7 +51,6 @@ export default function SubmitQuestion() {
           required 
         />
 
-        {/* Categoria da Pergunta */}
         <label htmlFor="category" className={styles.label}>
           Categoria:
         </label>
@@ -68,7 +63,6 @@ export default function SubmitQuestion() {
           required 
         />
 
-        {/* Texto da Pergunta */}
         <label htmlFor="questionText" className={styles.label}>
           Pergunta:
         </label>
@@ -80,7 +74,6 @@ export default function SubmitQuestion() {
           required 
         />
 
-        {/* Botão para Enviar Pergunta */}
         <button type="submit" className={styles.submitButton}>
           Enviar Pergunta
         </button>

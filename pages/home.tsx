@@ -1,12 +1,12 @@
 'use client'
 import React from 'react';
 import styles from '../styles/Home.module.css';
+//import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className={styles.pageContainer}>
       <div className={styles.banner}>
-        <img src="../src/images/forum-label-on-chat-speech-bubble-stock-illustration-vector.jpg" alt="Site Banner" className={styles.bannerImage} />
       </div>
 
       <section className={styles.topQuestionsSection}>
