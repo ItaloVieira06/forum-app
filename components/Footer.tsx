@@ -5,11 +5,9 @@ export default function Footer() {
     return (
       <footer className={styles.footer}>
         <div className={styles.separator} />
-        <div className={styles.logo}>
-          <Link href="/">
-           Logo
-          </Link>
-        </div>
+        <div className={styles.logoContainer}>
+        <img src="/images/logo.png" alt="Logo do site" className={styles.logo} />
+      </div>
         <div className={styles.socialMedia}>
           <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             Facebook

@@ -20,8 +20,10 @@ export default function LoginPage() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
-        <Link href="/Home">Logo</Link>
+      <div className={styles.logoContainer}>
+        <Link href="/Home">
+            <img src="/images/logo.png" alt="Logo do site" className={styles.logo} />
+        </Link>
       </div>
       <div className={styles.navLinks}>
         <Link href="/Home" className={`${styles.link} ${styles.whiteButton}`}>
