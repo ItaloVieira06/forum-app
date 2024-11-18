@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <div className={styles.pageContainer}>
       <div className={styles.banner}>
+      <img src="/images/banner.jpg" alt="Banner" className={styles.bannerImage} />
       </div>
 
       <section className={styles.topQuestionsSection}>
